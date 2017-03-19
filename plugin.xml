@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-nivad-bazaar"
+    version="1.0">
+
+	<name>Nivad CafeBazaar Plugin</name>
+    <description>Cordova Nivad CafeBazaar Plugin</description>
+    <author>Milad Mohammadi Rezagah</author>
+    <license>Apache 2.0</license>
+    <keywords>cordova,plugin,nivad,bazaar</keywords>
+    <repo>https://github.com/mdplugins/cordova-nivad-bazaar</repo>
+    <issue>https://github.com/mdplugins/cordova-nivad-bazaar/issues</issue>
+	<engines>
+	    <engine name="cordova" version=">=3.0.0" />
+	</engines>
+	
+    <js-module src="www/nivad.js" name="nivad">
+        <clobbers target="window.nivad" />
+    </js-module>
+    
+    <!-- android -->
+    <platform name="android">    
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="NivadPlugin" >
+				<param name="android-package" value="io.nivad.miladesign.NivadPlugin"/>
+			</feature>
+	    </config-file>
+		<config-file target="AndroidManifest.xml" parent="/*">
+			<uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		</config-file>
+		<config-file target="AndroidManifest.xml" parent="/manifest/application">
+			<activity android:name="io.nivad.miladesign.PurchaseActivity"></activity>
+		</config-file>
+	    <source-file src="src/nivad-billing-library-0.1.8.jar" target-dir="libs"/>
+	    <source-file src="src/java-jwt-2.1.0.jar" target-dir="libs"/>
+        <source-file src="src/NivadPlugin.java" target-dir="src/io/nivad/miladesign" />
+        <source-file src="src/PurchaseActivity.java" target-dir="src/io/nivad/miladesign" />
+		
+    </platform>
+	
+</plugin>

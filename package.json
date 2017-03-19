@@ -1,0 +1,34 @@
+{
+  "name": "Nivad CafeBazaar Plugin",
+  "version": "1.0",
+  "description": "Cordova Nivad CafeBazaar Plugin",
+  "cordova": {
+    "id": "cordova-nivad-bazaar",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdplugins/cordova-nivad-bazaar.git"
+  },
+  "keywords": [
+    "nivad",
+    "plugin",
+    "bazaar",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Sina Rezaei",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/mdplugins/cordova-nivad-bazaar/issues"
+  },
+  "homepage": "https://github.com/mdplugins/cordova-nivad-bazaar#readme"
+}
