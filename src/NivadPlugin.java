@@ -64,6 +64,16 @@ public class NivadPlugin extends CordovaPlugin {
 			consumePurchase(productId, CallbackContext);
 		    return true;
 		}
+		if (action.equals("isPurchased")) {
+			String productId = args.getString(0);
+			isPurchased(productId, CallbackContext);
+		    return true;
+		}
+		if (action.equals("isSubscribed")) {
+			String productId = args.getString(0);
+			isSubscribed(productId, CallbackContext);
+		    return true;
+		}
 	    return false;
 	}
 	
@@ -140,12 +150,20 @@ public class NivadPlugin extends CordovaPlugin {
 		};
 	}
 
-	public boolean isPurchased(String productId){
-	    return bp.isPurchased(productId);
+	public void isPurchased(String productId, CallbackContext callbackContext){
+		boolean result = bp.isPurchased(productId);
+		callbackContextKeepCallback = callbackContext;
+		if (result==true) {
+			callbackContextKeepCallback.success();
+		}
 	}
 
-	public boolean isSubscribed(String productId){
-	    return bp.isSubscribed(productId);
+	public void isSubscribed(String productId, CallbackContext callbackContext){
+		boolean result = bp.isSubscribed(productId);
+		callbackContextKeepCallback = callbackContext;
+		if (result==true) {
+			callbackContextKeepCallback.success();
+		}
 	}
 
 	public void purchase(String productId, CallbackContext callbackContext) {
@@ -170,7 +188,7 @@ public class NivadPlugin extends CordovaPlugin {
 		boolean Result;
     	JSONObject outerObject = new JSONObject();
     	try {
-    		Result = bp.consumePurchase(productId);
+    		Result = NivadPlugin.bp.consumePurchase(productId);
             outerObject.put("event", "consumePurchase");
             outerObject.put("consume", Result);
             callbackSuccess(callbackContextKeepCallback, outerObject);
