@@ -1,6 +1,6 @@
 {
   "name": "cordova-nivad-bazaar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova Nivad CafeBazaar Plugin",
   "cordova": {
     "id": "cordova-nivad-bazaar",
