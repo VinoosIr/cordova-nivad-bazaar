@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-nivad-bazaar"
-    version="1.0">
+    version="1.0.0">
 
 	<name>Nivad CafeBazaar Plugin</name>
     <description>Cordova Nivad CafeBazaar Plugin</description>
