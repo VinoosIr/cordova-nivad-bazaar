@@ -1,6 +1,6 @@
 {
   "name": "cordova-nivad-bazaar",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Cordova Nivad CafeBazaar Plugin",
   "cordova": {
     "id": "cordova-nivad-bazaar",
@@ -10,12 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdplugins/cordova-nivad-bazaar.git"
+    "url": "git+https://github.com/vinoosir/cordova-nivad-bazaar.git"
   },
   "keywords": [
     "nivad",
     "plugin",
     "bazaar",
+    "vinoos",
     "ecosystem:cordova",
     "cordova-android"
   ],
@@ -28,7 +29,7 @@
   "author": "Milad Mohammadi Rezagah",
   "license": "Apache 2.0",
   "bugs": {
-    "url": "https://github.com/mdplugins/cordova-nivad-bazaar/issues"
+    "url": "https://github.com/vinoosir/cordova-nivad-bazaar/issues"
   },
-  "homepage": "https://github.com/mdplugins/cordova-nivad-bazaar#readme"
+  "homepage": "https://github.com/vinoosir/cordova-nivad-bazaar#readme"
 }

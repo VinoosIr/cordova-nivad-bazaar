@@ -2,15 +2,15 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-nivad-bazaar"
-    version="1.0.1">
+    version="1.1.1">
 
 	<name>Nivad CafeBazaar Plugin</name>
     <description>Cordova Nivad CafeBazaar Plugin</description>
     <author>Milad Mohammadi Rezagah</author>
     <license>Apache 2.0</license>
-    <keywords>cordova,plugin,nivad,bazaar</keywords>
-    <repo>https://github.com/mdplugins/cordova-nivad-bazaar</repo>
-    <issue>https://github.com/mdplugins/cordova-nivad-bazaar/issues</issue>
+    <keywords>cordova,plugin,nivad,bazaar,vinoos</keywords>
+    <repo>https://github.com/vinoosir/cordova-nivad-bazaar</repo>
+    <issue>https://github.com/vinoosir/cordova-nivad-bazaar/issues</issue>
 	<engines>
 	    <engine name="cordova" version=">=3.0.0" />
 	</engines>
